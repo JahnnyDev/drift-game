@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "C: gcc.exe build active file",
+      "command": "C:\\MinGW\\bin\\gcc.exe",
+      "args": [
+        "-g",
+        "-std=c11",
+        "-Wall",
+        "-Werror",
+        "-I${workspaceFolder}\\include",
+        "-L${workspaceFolder}\\lib",
+        "${workspaceFolder}\\src\\glad.c",
+        "${workspaceFolder}\\src\\main.c",
+        "-lglfw3dll",
+        "-luser32",
+        "-lgdi32",
+        "-lopengl32",
+        "-lshell32",
+        "-o",
+        "${workspaceFolder}\\drift-game.exe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "C:\\MinGW\\bin\\gcc.exe",
+    }
+  ]
+}
